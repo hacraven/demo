@@ -33,8 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# HC added gem to make errors better looking
-gem 'better_errors', '~> 2.4'
+
 #  HC added bulma instead of bootstrap to try it
 gem 'bulma-rails', '~> 0.7.1'
 # HC added simple forms
@@ -57,10 +56,13 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  # HC added gem to make errors better looking
+gem 'better_errors', '~> 2.4'
+
 # HC added Guard is a command line tool to easily handle events on file system modifications.
 gem 'guard', '~> 2.14', '>= 2.14.2'
 # HC Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+ gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 group :test do
   # Adds support for Capybara system testing and selenium driver
