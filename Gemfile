@@ -39,6 +39,8 @@ gem 'bulma-rails', '~> 0.7.1'
 # HC added simple forms
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
 
+#added at suggestion of error code
+gem 'binding_of_caller', '~> 0.8.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
